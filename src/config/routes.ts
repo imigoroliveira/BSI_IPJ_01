@@ -8,5 +8,8 @@ routes.get("/", (request, response) => {
 });
 
 routes.post("/produto/cadastrar", new ProdutoController().create);
+routes.get("/produto/listar", new ProdutoController().list);
+routes.put("/produto/alterar", new ProdutoController().update);
+routes.delete("/produto/remover", new ProdutoController().remove);
 
 export { routes }
